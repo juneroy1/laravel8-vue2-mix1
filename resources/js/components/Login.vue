@@ -82,8 +82,14 @@ export default {
             this.processing = true;
             await axios.get("/sanctum/csrf-cookie");
             await axios
-                .post("/login", this.auth)
+                .post("/api/login", this.auth)
                 .then(({ data }) => {
+                    // console.log("data", data);
+                    console.log("data", data.data.token);
+                    const responseData = data.data;
+                    // Example: store the access token in localStorage
+                    localStorage.setItem("access_token", responseData.token);
+
                     this.signIn();
                 })
                 .catch(({ response: { data } }) => {
