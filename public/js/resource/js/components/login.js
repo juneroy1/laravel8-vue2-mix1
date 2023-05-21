@@ -47,8 +47,13 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
               return axios.get("/sanctum/csrf-cookie");
             case 3:
               _context.next = 5;
-              return axios.post("/login", _this.auth).then(function (_ref) {
+              return axios.post("/api/login", _this.auth).then(function (_ref) {
                 var data = _ref.data;
+                // console.log("data", data);
+                console.log("data", data.data.token);
+                var responseData = data.data;
+                // Example: store the access token in localStorage
+                localStorage.setItem("access_token", responseData.token);
                 _this.signIn();
               })["catch"](function (_ref2) {
                 var data = _ref2.response.data;
