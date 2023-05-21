@@ -25,8 +25,14 @@ export default {
     },
     actions: {
         login({ commit }) {
+            const accessToken = localStorage.getItem("access_token");
             return axios
-                .get("/api/user")
+                .get("/api/user", {
+                    headers: {
+                        Accept: "application/json",
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                })
                 .then(({ data }) => {
                     commit("SET_USER", data);
                     commit("SET_AUTHENTICATED", true);
