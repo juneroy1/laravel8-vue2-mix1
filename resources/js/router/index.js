@@ -18,7 +18,7 @@ const Register = () =>
 /* Layouts */
 const DahboardLayout = () =>
     import(
-        "../components/Layouts/Dashboard.vue" /* webpackChunkName: "resource/js/components/layouts/dashboard" */
+        "../components/layouts/Dashboard.vue" /* webpackChunkName: "resource/js/components/layouts/dashboard" */
     );
 /* Layouts */
 
