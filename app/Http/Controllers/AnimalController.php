@@ -14,7 +14,11 @@ class AnimalController extends Controller
     public function index()
     {
         //
-       
+        $animal =  AnimalModel::all();
+        return response()->json([
+            'sucess'    => true,
+            'data'      => $animal
+        ]);
 
     }
 
