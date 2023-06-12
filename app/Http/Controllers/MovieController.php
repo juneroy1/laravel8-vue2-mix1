@@ -41,6 +41,16 @@ class MovieController extends Controller
     public function store(Request $request)
     {
         //
+        $movie = new MovieModel;
+        $movie->name = $request->name;
+        $movie->description = $request->description;
+        $movie->save();
+
+        return response()->json([
+            "success" => true,
+            "message" => "Successfully registered new movie",
+            "data" => $movie
+        ]);
     }
 
     /**
