@@ -14,6 +14,12 @@ class MovieController extends Controller
     public function index()
     {
         //
+        $movies = MovieModel::all();
+
+        return response()->json([
+            "success" => true,
+            "data" => $movies
+        ]);
     }
 
     /**
