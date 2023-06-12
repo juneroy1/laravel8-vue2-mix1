@@ -85,6 +85,16 @@ class MovieController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $movie =  MovieModel::find($id);
+        $movie->name = $request->name;
+        $movie->description = $request->description;
+        $movie->save();
+
+        return response()->json([
+            "success" => true,
+            "message" => "Successfully update movie details",
+            "data" => $movie
+        ]);
     }
 
     /**
