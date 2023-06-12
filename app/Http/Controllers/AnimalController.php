@@ -109,6 +109,15 @@ class AnimalController extends Controller
     public function destroy($id)
     {
         //
+
+        $animal =  AnimalModel::find($id);
+        
+        $animal->delete();
+
+        return response()->json([
+            'sucess'    => true,
+            'message' => 'Successfully deleted animal details',
+        ]);
        
     }
 }
