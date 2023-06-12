@@ -87,6 +87,16 @@ class AnimalController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $animal =  AnimalModel::find($id);
+        $animal->name = $request->name;
+        $animal->description = $request->description;
+        $animal->save();
+
+        return response()->json([
+            'sucess'    => true,
+            'message' => 'Successfully updated animal details',
+            'data'      => $animal
+        ]);
         
     }
 
