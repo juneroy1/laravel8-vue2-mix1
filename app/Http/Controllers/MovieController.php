@@ -106,5 +106,13 @@ class MovieController extends Controller
     public function destroy($id)
     {
         //
+
+        $movie =  MovieModel::find($id);
+        $movie->delete();
+
+        return response()->json([
+            "success" => true,
+            "message" => "Successfully deleted movie",
+        ]);
     }
 }
