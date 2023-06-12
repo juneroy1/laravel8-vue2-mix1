@@ -10,5 +10,9 @@ class MovieModel extends Model
     use HasFactory;
 
     protected $table = "movies";
-    
+
+    protected $fillable = [
+        "name",
+        "description"
+    ];
 }
