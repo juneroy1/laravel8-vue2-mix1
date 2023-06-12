@@ -41,6 +41,16 @@ class AnimalController extends Controller
     public function store(Request $request)
     {
         //
+        $animal = new AnimalModel;
+        $animal->name = $request->name;
+        $animal->description = $request->description;
+        $animal->save();
+
+        return response()->json([
+            'sucess'    => true,
+            'message' => 'Successfully registered new animal',
+            'data'      => $animal
+        ]);
         
 
     }
