@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\RegisterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,5 +19,7 @@ Route::get('{any}', function () {
     return view('welcome');
 })->where('any', '.*');
 
-
+Route::controller(RegisterController::class)->group(function(){
+    Route::post('register', 'register');
+});
 Route::get('/home', [HomeController::class, 'index'])->name('home');
