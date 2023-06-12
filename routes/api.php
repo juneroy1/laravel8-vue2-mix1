@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AnimalController;
+use App\Http\Controllers\MovieController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -28,3 +29,4 @@ Route::controller(LoginController::class)->group(function(){
 });
 
 Route::resource("animal", AnimalController::class);
+Route::resource("movie", MovieController::class);
