@@ -30,3 +30,4 @@ Route::controller(LoginController::class)->group(function(){
 
 Route::resource("animal", AnimalController::class);
 Route::resource("movie", MovieController::class);
+Route::resource("music", MusicController::class);
