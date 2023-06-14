@@ -14,6 +14,12 @@ class MusicController extends Controller
     public function index()
     {
         //
+        $musics = MusicModel::all();
+
+        return response()->json([
+            "success" => true,
+            "data" => $musics
+        ]);
     }
 
     /**
