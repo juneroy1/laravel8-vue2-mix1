@@ -106,5 +106,12 @@ class MusicController extends Controller
     public function destroy($id)
     {
         //
+        $music =  MusicModel::find($id);
+        $music->delete();
+        
+        return response()->json([
+            "success" => true,
+            "message" => "Successfully deleted music",
+        ]);
     }
 }
