@@ -41,6 +41,16 @@ class MusicController extends Controller
     public function store(Request $request)
     {
         //
+        $music = new MusicModel;
+        $music->name = $request->name;
+        $music->description = $request->description;
+        $music->save();
+
+        return response()->json([
+            "success" => true,
+            "message" => "Successfully registered new music",
+            "data" => $music
+        ]);
     }
 
     /**
