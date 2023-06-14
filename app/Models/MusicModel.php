@@ -9,4 +9,9 @@ class MusicModel extends Model
 {
     use HasFactory;
     protected $table = "musics";
+    
+    protected $fillable = [
+        "name",
+        "description"
+    ];
 }
