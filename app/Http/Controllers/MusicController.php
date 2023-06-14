@@ -85,6 +85,16 @@ class MusicController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $music =  MusicModel::find($id);
+        $music->name = $request->name;
+        $music->description = $request->description;
+        $music->save();
+
+        return response()->json([
+            "success" => true,
+            "message" => "Successfully update music details",
+            "data" => $music
+        ]);
     }
 
     /**
