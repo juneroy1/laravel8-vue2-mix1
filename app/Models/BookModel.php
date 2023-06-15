@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class BookModel extends Model
 {
     use HasFactory;
+    protected $table="books";
 }
