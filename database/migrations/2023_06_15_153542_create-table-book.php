@@ -15,6 +15,7 @@ class CreateTableBook extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->timestamps();
         });
     }
