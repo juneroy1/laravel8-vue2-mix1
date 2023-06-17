@@ -41,6 +41,16 @@ class BookController extends Controller
     public function store(Request $request)
     {
         //
+        $book = new BookModel;
+        $book->name = $request->name;
+        $book->description = $request->description;
+        $book->save();
+
+        return response()->json([
+            'sucess'    => true,
+            'message' => 'Successfully registered new book',
+            'data'      => $book
+        ]);
     }
 
     /**
