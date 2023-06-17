@@ -14,6 +14,12 @@ class BookController extends Controller
     public function index()
     {
         //
+        $books = BookModel::all();
+
+        return response()->json([
+            "success" => true,
+            "data" => $books,
+        ]);
     }
 
     /**
