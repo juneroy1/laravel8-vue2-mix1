@@ -14,6 +14,12 @@ class ProgrammingController extends Controller
     public function index()
     {
         //
+        $programming = ProgrammingModel::all();
+
+        return response()->json([
+            "success" => true,
+            "data" => $programming,
+        ]);
     }
 
     /**
