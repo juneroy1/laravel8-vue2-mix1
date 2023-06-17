@@ -85,6 +85,16 @@ class BookController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $book =  BookModel::find($id);
+        $book->name = $request->name;
+        $book->description = $request->description;
+        $book->save();
+
+        return response()->json([
+            'sucess'    => true,
+            'message' => 'Successfully updated book details',
+            'data'      => $book
+        ]);
     }
 
     /**
