@@ -106,5 +106,13 @@ class BookController extends Controller
     public function destroy($id)
     {
         //
+        $book =  BookModel::find($id);
+        
+        $book->delete();
+
+        return response()->json([
+            'sucess'    => true,
+            'message' => 'Successfully deleted book details',
+        ]);
     }
 }
