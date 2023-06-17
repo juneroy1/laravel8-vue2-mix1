@@ -14,6 +14,12 @@ class CountryCountry extends Controller
     public function index()
     {
         //
+        $countries = CountryModel::all();
+
+        return response()->json([
+            "success" => true,
+            "data" => $countries,
+        ]);
     }
 
     /**
