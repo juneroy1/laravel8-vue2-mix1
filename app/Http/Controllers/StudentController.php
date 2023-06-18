@@ -41,6 +41,16 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+        $student = new User;
+        $student->type = 'student';
+        $student->save();
+        
+
+        return response()->json([
+            'success' => true,
+            'message' => 'successfully created new student in the app',
+            'data' => $student
+        ]);
     }
 
     /**
