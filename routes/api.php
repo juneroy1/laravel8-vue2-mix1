@@ -32,3 +32,4 @@ Route::resource("animal", AnimalController::class);
 Route::resource("movie", MovieController::class);
 Route::resource("music", MusicController::class);
 Route::resource("country", CountryController::class);
+Route::resource("student", StudentController::class);
