@@ -14,6 +14,12 @@ class TeacherController extends Controller
     public function index()
     {
         //
+        $teachers = User::where('type', 'teacher')->get();
+
+        return response()->json([
+            'success' => true,
+            'data' => $teachers
+        ]);
     }
 
     /**
