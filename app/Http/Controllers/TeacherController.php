@@ -41,6 +41,16 @@ class TeacherController extends Controller
     public function store(Request $request)
     {
         //
+        $teacher = new User;
+        $teacher->type = 'teacher';
+        $teacher->save();
+        
+
+        return response()->json([
+            'success' => true,
+            'message' => 'successfully created new teacher in the app',
+            'data' => $teacher
+        ]);
     }
 
     /**
