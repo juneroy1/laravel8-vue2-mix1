@@ -14,6 +14,12 @@ class StudentController extends Controller
     public function index()
     {
         //
+        $students = User::where('type', 'student')->get();
+
+        return response()->json([
+            'success' => true,
+            'data' => $students
+        ]);
     }
 
     /**
