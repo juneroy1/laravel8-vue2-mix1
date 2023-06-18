@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
