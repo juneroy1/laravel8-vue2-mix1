@@ -44,6 +44,7 @@ class StudentController extends Controller
         $student = new User;
         $student->type = 'student';
         $student->first_name = $request->first_name;
+        $student->last_name = $request->last_name;
         $student->save();
         
 
