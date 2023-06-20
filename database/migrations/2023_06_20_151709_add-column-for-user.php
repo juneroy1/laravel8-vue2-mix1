@@ -19,6 +19,7 @@ class AddColumnForUser extends Migration
             $table->string("last_name");
             $table->string("middle_name");
             $table->string("address");
+            $table->string("contact_number");
         });
     }
 
