@@ -23,6 +23,7 @@ class AddColumnForUser extends Migration
             $table->date("birth_date");
             $table->string("description");
             $table->string("type");
+            $table->string("position");
         });
     }
 
