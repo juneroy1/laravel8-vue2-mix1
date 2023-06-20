@@ -21,6 +21,7 @@ class AddColumnForUser extends Migration
             $table->string("address");
             $table->string("contact_number");
             $table->date("birth_date");
+            $table->string("description");
         });
     }
 
