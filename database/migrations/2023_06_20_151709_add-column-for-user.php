@@ -16,6 +16,7 @@ class AddColumnForUser extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->string("first_name");
+            $table->string("last_name");
         });
     }
 
