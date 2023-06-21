@@ -14,6 +14,12 @@ class SchoolController extends Controller
     public function index()
     {
         //
+        $schools = SchoolModel::all();
+
+        return response()->json([
+            "success" => true,
+            "data" => $schools,
+        ]);
     }
 
     /**
