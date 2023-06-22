@@ -43,6 +43,7 @@ class SchoolController extends Controller
         //
          $school = new SchoolModel;
          $school->name = $request->name;
+         $school->description = $request->description;
 
         return response()->json([
             "success" => true,
