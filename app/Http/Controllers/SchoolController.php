@@ -41,6 +41,12 @@ class SchoolController extends Controller
     public function store(Request $request)
     {
         //
+         $school = new SchoolModel;
+
+        return response()->json([
+            "success" => true,
+            "data" => $school,
+        ]);
     }
 
     /**
