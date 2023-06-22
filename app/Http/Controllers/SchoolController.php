@@ -55,7 +55,7 @@ class SchoolController extends Controller
 
           return response()->json([
                 "success" => false,
-                "data" => $school,
+                "data" => false,
             ]);
 
        
