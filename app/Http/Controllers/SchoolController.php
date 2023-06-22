@@ -47,13 +47,13 @@ class SchoolController extends Controller
          $ok = $school->save();
 
          if ($ok) {
-            # code...
+             return response()->json([
+                "success" => true,
+                "data" => $school,
+            ]);
          }
 
-        return response()->json([
-            "success" => true,
-            "data" => $school,
-        ]);
+       
     }
 
     /**
