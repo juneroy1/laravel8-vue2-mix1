@@ -107,7 +107,7 @@ class SchoolController extends Controller
              return response()->json([
                 "success" => true,
                 "data" => $school,
-                "message" => "Successfully created new school"
+                "message" => "Successfully updated school"
             ]);
          }
 
