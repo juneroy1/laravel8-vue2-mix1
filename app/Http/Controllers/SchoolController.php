@@ -103,7 +103,15 @@ class SchoolController extends Controller
 
         $ok = $school->save();
 
-        
+         if ($ok) {
+             return response()->json([
+                "success" => true,
+                "data" => $school,
+                "message" => "Successfully created new school"
+            ]);
+         }
+
+      
     }
 
     /**
