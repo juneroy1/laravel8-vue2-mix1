@@ -83,6 +83,7 @@ class SchoolController extends Controller
     public function edit($id)
     {
         //
+        
     }
 
     /**
@@ -95,6 +96,7 @@ class SchoolController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $school =  SchoolModel::find($id);
     }
 
     /**
