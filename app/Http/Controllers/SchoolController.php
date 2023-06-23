@@ -97,6 +97,7 @@ class SchoolController extends Controller
     {
         //
         $school =  SchoolModel::find($id);
+        $school->name = $request->name;
     }
 
     /**
