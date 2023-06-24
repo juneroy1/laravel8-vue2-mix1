@@ -87,6 +87,10 @@ class SchoolController extends Controller
         if ($school) {
             # code...
             // if not nil then update school details
+            return response()->json([
+                "success" => true,
+                "data" => $school,
+            ]);
         }
         
     }
