@@ -90,6 +90,7 @@ class SchoolController extends Controller
             return response()->json([
                 "success" => true,
                 "data" => $school,
+                "message" => "School details",
             ]);
         }
 
