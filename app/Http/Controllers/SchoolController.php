@@ -144,6 +144,10 @@ class SchoolController extends Controller
     {
         //
         $school =  SchoolModel::find($id);
-        $school->delete();
+        $ok = $school->delete();
+
+        if ($ok) {
+            # code...
+        }
     }
 }
