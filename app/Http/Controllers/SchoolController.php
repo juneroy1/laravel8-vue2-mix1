@@ -92,6 +92,11 @@ class SchoolController extends Controller
                 "data" => $school,
             ]);
         }
+
+        return response()->json([
+            "success" => false,
+            "data" => false,
+        ]);
         
     }
 
