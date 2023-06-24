@@ -147,7 +147,11 @@ class SchoolController extends Controller
         $ok = $school->delete();
 
         if ($ok) {
-            # code...
+            return response()->json([
+                "success" => true,
+                "data" => $school,
+                "message" => "School details successfully deleted"
+            ]);
         }
     }
 }
