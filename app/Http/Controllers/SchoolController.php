@@ -143,5 +143,6 @@ class SchoolController extends Controller
     public function destroy($id)
     {
         //
+        $school =  SchoolModel::find($id);
     }
 }
