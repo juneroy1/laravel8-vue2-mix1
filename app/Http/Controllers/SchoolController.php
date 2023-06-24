@@ -153,5 +153,11 @@ class SchoolController extends Controller
                 "message" => "School details successfully deleted"
             ]);
         }
+
+        return response()->json([
+            "success" => false,
+            "data" => $school,
+            "message" => "Something went wrong in deleting school data"
+        ]);
     }
 }
