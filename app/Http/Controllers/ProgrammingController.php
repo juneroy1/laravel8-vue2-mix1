@@ -41,6 +41,7 @@ class ProgrammingController extends Controller
     public function store(Request $request)
     {
         //
+        $programming = new ProgrammingModel;
     }
 
     /**
