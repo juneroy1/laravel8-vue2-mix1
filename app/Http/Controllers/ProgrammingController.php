@@ -44,7 +44,7 @@ class ProgrammingController extends Controller
         $programming = new ProgrammingModel;
         $programming->name = $request->name;
         $programming->description = $request->description;
-        $programming->save();
+        $ok = $programming->save();
         
     }
 
