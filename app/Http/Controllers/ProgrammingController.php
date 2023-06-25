@@ -49,6 +49,7 @@ class ProgrammingController extends Controller
         if ($ok) {
             return response()->json([
                 "success" => true,
+                "data" => $programming,
             ]);
         }
         
