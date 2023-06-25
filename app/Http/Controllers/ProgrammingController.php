@@ -53,6 +53,10 @@ class ProgrammingController extends Controller
                 "message"=> "Successfully registered new programming"
             ]);
         }
+
+        return response()->json([
+           
+        ]);
         
     }
 
