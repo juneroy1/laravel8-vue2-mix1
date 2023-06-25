@@ -42,6 +42,8 @@ class ProgrammingController extends Controller
     {
         //
         $programming = new ProgrammingModel;
+        $programming->name = $request->name;
+        
     }
 
     /**
