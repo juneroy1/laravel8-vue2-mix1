@@ -47,7 +47,8 @@ class ProgrammingController extends Controller
         $ok = $programming->save();
 
         if ($ok) {
-            
+            return response()->json([
+            ]);
         }
         
     }
