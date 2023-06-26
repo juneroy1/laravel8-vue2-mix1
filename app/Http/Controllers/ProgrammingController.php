@@ -89,6 +89,8 @@ class ProgrammingController extends Controller
                 "data" => $programming,
             ]);
         }
+        return response()->json([
+        ]);
     }
 
     /**
