@@ -81,6 +81,7 @@ class ProgrammingController extends Controller
     public function edit($id)
     {
         //
+        $programming = ProgrammingModel::find($id);
     }
 
     /**
