@@ -114,6 +114,7 @@ class ProgrammingController extends Controller
             return response()->json([
                 "success" => true,
                 "data" => $programming,
+                "message" => ""
             ]);
         }
     }
