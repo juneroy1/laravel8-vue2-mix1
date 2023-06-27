@@ -110,6 +110,9 @@ class ProgrammingController extends Controller
         $programming->name = $request->name;
         $programming->description = $request->description;
         $ok = $programming->save();
+        if ($ok) {
+            # code...
+        }
     }
 
     /**
