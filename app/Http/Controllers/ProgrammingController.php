@@ -107,6 +107,7 @@ class ProgrammingController extends Controller
     {
         //
         $programming = ProgrammingModel::find($id);
+        $programming->name = $request->name;
     }
 
     /**
