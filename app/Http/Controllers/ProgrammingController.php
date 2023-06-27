@@ -117,6 +117,9 @@ class ProgrammingController extends Controller
                 "message" => "Successfully update programming details"
             ]);
         }
+
+        return response()->json([
+            ]);
     }
 
     /**
