@@ -111,7 +111,8 @@ class ProgrammingController extends Controller
         $programming->description = $request->description;
         $ok = $programming->save();
         if ($ok) {
-            # code...
+            return response()->json([
+            ]);
         }
     }
 
