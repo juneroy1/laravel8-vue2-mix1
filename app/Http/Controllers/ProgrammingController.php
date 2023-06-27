@@ -106,6 +106,7 @@ class ProgrammingController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $programming = ProgrammingModel::find($id);
     }
 
     /**
