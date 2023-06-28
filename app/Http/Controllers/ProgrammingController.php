@@ -134,7 +134,8 @@ class ProgrammingController extends Controller
         $programming = ProgrammingModel::find($id);
 
         if ($programming) {
-            # code...
+            return response()->json([
+            ]);
         }
     }
 }
