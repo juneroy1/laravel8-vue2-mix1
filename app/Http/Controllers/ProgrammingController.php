@@ -136,6 +136,7 @@ class ProgrammingController extends Controller
         if ($programming) {
             return response()->json([
                 "success" => true,
+                "data" => false,
             ]);
         }
     }
