@@ -131,5 +131,6 @@ class ProgrammingController extends Controller
     public function destroy($id)
     {
         //
+        $programming = ProgrammingModel::find($id);
     }
 }
