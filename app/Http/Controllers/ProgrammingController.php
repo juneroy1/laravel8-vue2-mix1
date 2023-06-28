@@ -140,5 +140,8 @@ class ProgrammingController extends Controller
                 "message" => "Successfully deleted programming details"
             ]);
         }
+
+        return response()->json([
+        ]);
     }
 }
