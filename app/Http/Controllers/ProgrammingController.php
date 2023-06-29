@@ -121,7 +121,7 @@ class ProgrammingController extends Controller
         return response()->json([
             "success" => false,
             "data" => false,
-            "message" => ""
+            "message" => "Something went wrong in updating details"
             ]);
     }
 
