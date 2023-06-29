@@ -88,7 +88,7 @@ class MusicController extends Controller
         $music =  MusicModel::find($id);
         $music->name = $request->name;
         $music->description = $request->description;
-        $music->save();
+        $ok = $music->save();
 
         return response()->json([
             "success" => true,
