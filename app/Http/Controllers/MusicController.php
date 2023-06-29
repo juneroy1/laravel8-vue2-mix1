@@ -94,6 +94,7 @@ class MusicController extends Controller
             return response()->json([
                 "success" => true,
                 "data" => $music,
+                "message" => "Successfully update music details",
                 
             ]);
         }
