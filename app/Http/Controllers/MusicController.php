@@ -93,6 +93,8 @@ class MusicController extends Controller
         if ($ok) {
             return response()->json([
                 "success" => true,
+                "data" => $music,
+                
             ]);
         }
         
