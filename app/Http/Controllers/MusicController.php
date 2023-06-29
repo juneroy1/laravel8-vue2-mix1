@@ -90,6 +90,9 @@ class MusicController extends Controller
         $music->description = $request->description;
         $ok = $music->save();
 
+        if ($ok) {
+            # code...
+        }
         return response()->json([
             "success" => true,
             "message" => "Successfully update music details",
