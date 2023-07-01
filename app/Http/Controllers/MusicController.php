@@ -76,7 +76,8 @@ class MusicController extends Controller
         $music =  MusicModel::find($id);
 
         if ($music) {
-            # code...
+            return response()->json([
+            ]);
         }
     }
 
