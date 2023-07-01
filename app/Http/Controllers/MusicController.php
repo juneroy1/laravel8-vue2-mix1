@@ -75,7 +75,7 @@ class MusicController extends Controller
         //
         $music =  MusicModel::find($id);
 
-        if (condition) {
+        if ($music) {
             # code...
         }
     }
