@@ -74,6 +74,10 @@ class MusicController extends Controller
     {
         //
         $music =  MusicModel::find($id);
+
+        if (condition) {
+            # code...
+        }
     }
 
     /**
