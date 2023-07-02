@@ -70,6 +70,9 @@ class MusicController extends Controller
                 "message" => "Successfully get Music details",
             ]);
           }
+
+          return response()->json([
+        ]);
     }
 
     /**
