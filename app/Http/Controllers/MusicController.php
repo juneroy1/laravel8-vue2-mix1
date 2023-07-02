@@ -63,7 +63,11 @@ class MusicController extends Controller
     {
         //
          $music =  MusicModel::find($id);
-          if ($music) {}
+          if ($music) {
+            return response()->json([
+
+            ]);
+          }
     }
 
     /**
