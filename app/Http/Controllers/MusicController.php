@@ -62,6 +62,7 @@ class MusicController extends Controller
     public function show($id)
     {
         //
+         $music =  MusicModel::find($id);
     }
 
     /**
