@@ -114,6 +114,7 @@ class MovieController extends Controller
             # code...
             return response()->json([
                 "success" => true,
+                "message" => "",
             ]);
         }
         
