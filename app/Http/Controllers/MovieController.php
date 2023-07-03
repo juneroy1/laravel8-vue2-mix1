@@ -117,6 +117,9 @@ class MovieController extends Controller
                 "message" => "Successfully deleted movie",
             ]);
         }
+
+        return response()->json([
+        ]);
         
     }
 }
