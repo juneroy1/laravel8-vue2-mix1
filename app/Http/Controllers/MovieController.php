@@ -112,10 +112,9 @@ class MovieController extends Controller
 
         if ($ok) {
             # code...
+            return response()->json([
+            ]);
         }
-        return response()->json([
-            "success" => true,
-            "message" => "Successfully deleted movie",
-        ]);
+        
     }
 }
