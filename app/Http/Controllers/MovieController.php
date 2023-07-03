@@ -108,7 +108,7 @@ class MovieController extends Controller
         //
 
         $movie =  MovieModel::find($id);
-        $movie->delete();
+        $ok = $movie->delete();
 
         return response()->json([
             "success" => true,
