@@ -91,13 +91,10 @@ class MovieController extends Controller
         $ok = $movie->save();
 
         if ($ok) {
-            # code...
+            return response()->json([
+            ]);
         }
-        return response()->json([
-            "success" => true,
-            "message" => "Successfully update movie details",
-            "data" => $movie
-        ]);
+        
     }
 
     /**
