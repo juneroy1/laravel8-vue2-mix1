@@ -47,13 +47,10 @@ class MovieController extends Controller
         $ok = $movie->save();
 
         if ($ok) {
-            # code...
-        }
-        return response()->json([
-            "success" => true,
-            "message" => "Successfully registered new movie",
-            "data" => $movie
+          return response()->json([
         ]);
+        }
+        
     }
 
     /**
