@@ -53,6 +53,9 @@ class MovieController extends Controller
             "data" => $movie
         ]);
         }
+
+        return response()->json([
+        ]);
         
     }
 
