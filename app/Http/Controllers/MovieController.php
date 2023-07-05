@@ -44,7 +44,7 @@ class MovieController extends Controller
         $movie = new MovieModel;
         $movie->name = $request->name;
         $movie->description = $request->description;
-        $movie->save();
+        $ok = $movie->save();
 
         return response()->json([
             "success" => true,
