@@ -49,7 +49,7 @@ class MovieController extends Controller
         if ($ok) {
           return response()->json([
             "success" => true,
-            "message" => "",
+            "message" => "Successfully registered new movie",
             "data" => $movie
         ]);
         }
