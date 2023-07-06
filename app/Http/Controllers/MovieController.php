@@ -93,7 +93,7 @@ class MovieController extends Controller
         }
 
           return response()->json([
-                "success" => true,
+                "success" => false,
                 "data" => false,
                  "message" => "Something went wrong in getting movie details",
             ]);
