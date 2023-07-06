@@ -83,6 +83,10 @@ class MovieController extends Controller
     {
         //
         $movie =  MovieModel::find($id);
+
+        if ($movie) {
+            # code...
+        }
     }
 
     /**
