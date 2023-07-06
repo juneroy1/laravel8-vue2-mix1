@@ -86,6 +86,7 @@ class MovieController extends Controller
 
         if ($movie) {
             return response()->json([
+                "success" => true,
             ]);
         }
     }
