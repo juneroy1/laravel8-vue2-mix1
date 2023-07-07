@@ -81,7 +81,7 @@ class MovieController extends Controller
             ]);
          }
           return response()->json([
-                "success" => true,
+                "success" => false,
                 "data" => true,
                 "message" => "",
             ]);
