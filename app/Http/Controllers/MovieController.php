@@ -80,6 +80,8 @@ class MovieController extends Controller
                 "message" => "Successfully get movie details",
             ]);
          }
+          return response()->json([
+            ]);
     }
 
     /**
