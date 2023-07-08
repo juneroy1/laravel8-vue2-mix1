@@ -70,6 +70,7 @@ class ProgrammingController extends Controller
     public function show($id)
     {
         //
+        $programming = ProgrammingModel::find($id);
     }
 
     /**
