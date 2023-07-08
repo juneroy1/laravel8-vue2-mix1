@@ -78,6 +78,8 @@ class ProgrammingController extends Controller
                 "message" => "Successfully get the programming details"
             ]);
         }
+        return response()->json([
+        ]);
     }
 
     /**
