@@ -71,7 +71,7 @@ class ProgrammingController extends Controller
     {
         //
         $programming = ProgrammingModel::find($id);
-        if (condition) {
+        if ($programming) {
             # code...
         }
     }
