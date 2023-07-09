@@ -75,6 +75,7 @@ class SchoolController extends Controller
         $school = SchoolModel::find($id);
         if ($school) {
             return response()->json([
+                "success" => true,
             ]);
         }
     }
