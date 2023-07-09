@@ -80,6 +80,9 @@ class SchoolController extends Controller
                 "message" => "Successfully get school details",
             ]);
         }
+
+        return response()->json([
+        ]);
     }
 
     /**
