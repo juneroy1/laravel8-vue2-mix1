@@ -72,6 +72,7 @@ class SchoolController extends Controller
     public function show($id)
     {
         //
+        $school = SchoolModel::find($id);
     }
 
     /**
