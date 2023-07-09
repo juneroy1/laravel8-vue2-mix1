@@ -76,6 +76,7 @@ class SchoolController extends Controller
         if ($school) {
             return response()->json([
                 "success" => true,
+                "data" => $school,
             ]);
         }
     }
