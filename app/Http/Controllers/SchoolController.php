@@ -73,6 +73,9 @@ class SchoolController extends Controller
     {
         //
         $school = SchoolModel::find($id);
+        if (condition) {
+            # code...
+        }
     }
 
     /**
