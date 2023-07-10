@@ -47,6 +47,10 @@ class StudentController extends Controller
         $student->last_name = $request->last_name;
         $student->middle_name = $request->middle_name;
         $ok = $student->save();
+
+        if (condition) {
+            # code...
+        }
         
 
         return response()->json([
