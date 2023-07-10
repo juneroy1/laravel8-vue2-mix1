@@ -52,6 +52,7 @@ class StudentController extends Controller
             return response()->json([
                 'success' => true,
                 'data' => $student,
+                'message' => '',
                 
             ]);
         }
