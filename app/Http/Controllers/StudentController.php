@@ -49,15 +49,12 @@ class StudentController extends Controller
         $ok = $student->save();
 
         if ($ok) {
-            # code...
+            return response()->json([
+            ]);
         }
         
 
-        return response()->json([
-            'success' => true,
-            'message' => 'successfully created new student in the app',
-            'data' => $student
-        ]);
+        
     }
 
     /**
