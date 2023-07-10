@@ -48,7 +48,7 @@ class StudentController extends Controller
         $student->middle_name = $request->middle_name;
         $ok = $student->save();
 
-        if (condition) {
+        if ($ok) {
             # code...
         }
         
