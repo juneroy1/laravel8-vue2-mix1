@@ -50,6 +50,7 @@ class StudentController extends Controller
 
         if ($ok) {
             return response()->json([
+                'success' => true,
             ]);
         }
         
