@@ -85,6 +85,9 @@ class StudentController extends Controller
                 'message' => "Successfully get student details"
             ]);
         }
+
+        return response()->json([
+            ]);
     }
 
     /**
