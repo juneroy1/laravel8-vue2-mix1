@@ -102,6 +102,7 @@ class StudentController extends Controller
     public function edit($id)
     {
         //
+        $student = User::find($id);
     }
 
     /**
