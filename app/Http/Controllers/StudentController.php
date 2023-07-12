@@ -105,7 +105,8 @@ class StudentController extends Controller
         $student = User::find($id);
 
         if ($student) {
-            # code...
+            return response()->json([
+            ]);
         }
     }
 
