@@ -129,6 +129,7 @@ class StudentController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $student = User::find($id);
     }
 
     /**
