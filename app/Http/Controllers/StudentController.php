@@ -134,6 +134,7 @@ class StudentController extends Controller
         if ($student) {
             return response()->json([
                 'success' => true,
+                'data' => $student,
             ]);
         }
     }
