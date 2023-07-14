@@ -167,7 +167,7 @@ class StudentController extends Controller
 
         return response()->json([
             'success' => false,
-            'message' => ""
+            'message' => "Something went wrong in deleting student"
         ]);
     }
 }
