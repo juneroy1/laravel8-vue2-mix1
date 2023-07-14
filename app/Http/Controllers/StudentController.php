@@ -161,7 +161,7 @@ class StudentController extends Controller
         if ($student) {
             return response()->json([
                 'success' => true,
-                'message' => ""
+                'message' => "Successfully remove student"
             ]);
         }
     }
