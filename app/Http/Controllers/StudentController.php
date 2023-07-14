@@ -158,7 +158,7 @@ class StudentController extends Controller
         //
         $student = User::find($id);
 
-        if (condition) {
+        if ($student) {
             # code...
         }
     }
