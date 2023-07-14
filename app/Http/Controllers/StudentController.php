@@ -164,5 +164,8 @@ class StudentController extends Controller
                 'message' => "Successfully remove student"
             ]);
         }
+
+        return response()->json([
+        ]);
     }
 }
