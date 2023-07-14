@@ -156,5 +156,6 @@ class StudentController extends Controller
     public function destroy($id)
     {
         //
+        $student = User::find($id);
     }
 }
