@@ -56,7 +56,7 @@ class TeacherController extends Controller
         return response()->json([
             'success' => false,
             'data' => false,
-            'message' => '',
+            'message' => 'Something went wrong',
         ]);
         
     }
