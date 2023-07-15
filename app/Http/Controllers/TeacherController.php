@@ -43,7 +43,7 @@ class TeacherController extends Controller
         //
         $teacher = new User;
         $teacher->type = 'teacher';
-        $teacher->save();
+        $ok = $teacher->save();
         
 
         return response()->json([
