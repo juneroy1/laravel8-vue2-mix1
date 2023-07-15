@@ -46,13 +46,13 @@ class TeacherController extends Controller
         $ok = $teacher->save();
         
         if ($ok) {
-            # code...
+            return response()->json([
+                'success' => true,
+                'message' => 'successfully created new teacher in the app',
+                'data' => $teacher
+            ]);
         }
-        return response()->json([
-            'success' => true,
-            'message' => 'successfully created new teacher in the app',
-            'data' => $teacher
-        ]);
+        
     }
 
     /**
