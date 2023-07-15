@@ -53,6 +53,8 @@ class TeacherController extends Controller
                 'message' => 'successfully created new teacher in the app',
             ]);
         }
+        return response()->json([
+        ]);
         
     }
 
