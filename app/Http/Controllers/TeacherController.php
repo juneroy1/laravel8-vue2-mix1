@@ -45,7 +45,7 @@ class TeacherController extends Controller
         $teacher->type = 'teacher';
         $ok = $teacher->save();
         
-        if (condition) {
+        if ($ok) {
             # code...
         }
         return response()->json([
