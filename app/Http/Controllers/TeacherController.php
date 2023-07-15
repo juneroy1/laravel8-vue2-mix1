@@ -45,7 +45,9 @@ class TeacherController extends Controller
         $teacher->type = 'teacher';
         $ok = $teacher->save();
         
-
+        if (condition) {
+            # code...
+        }
         return response()->json([
             'success' => true,
             'message' => 'successfully created new teacher in the app',
