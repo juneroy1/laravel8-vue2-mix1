@@ -50,7 +50,7 @@ class TeacherController extends Controller
                 'success' => true,
                 'data' => $teacher,
 
-                'message' => '',
+                'message' => 'successfully created new teacher in the app',
             ]);
         }
         
