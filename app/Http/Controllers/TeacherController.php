@@ -74,6 +74,7 @@ class TeacherController extends Controller
         if ($teacher) {
             return response()->json([
                 'success' => true,
+                'data' => $teacher,
             ]);
         }
     }
