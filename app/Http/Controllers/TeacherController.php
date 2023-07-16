@@ -79,6 +79,9 @@ class TeacherController extends Controller
                 'message' => 'successfully get teacher details',
             ]);
         }
+
+        return response()->json([
+        ]);
     }
 
     /**
