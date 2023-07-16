@@ -76,7 +76,7 @@ class TeacherController extends Controller
                 'success' => true,
                 'data' => $teacher,
 
-                'message' => '',
+                'message' => 'successfully get teacher details',
             ]);
         }
     }
