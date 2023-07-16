@@ -72,7 +72,8 @@ class TeacherController extends Controller
         //
         $teacher = User::find($id);
         if ($teacher) {
-            # code...
+            return response()->json([
+            ]);
         }
     }
 
