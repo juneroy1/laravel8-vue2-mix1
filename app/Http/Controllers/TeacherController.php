@@ -73,6 +73,7 @@ class TeacherController extends Controller
         $teacher = User::find($id);
         if ($teacher) {
             return response()->json([
+                'success' => true,
             ]);
         }
     }
