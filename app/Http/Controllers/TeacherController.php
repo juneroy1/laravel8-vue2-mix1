@@ -70,6 +70,7 @@ class TeacherController extends Controller
     public function show($id)
     {
         //
+        $teacher = User::find($id);
     }
 
     /**
