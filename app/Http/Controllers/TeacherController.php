@@ -106,6 +106,7 @@ class TeacherController extends Controller
         }
         return response()->json([
             'success' => false,
+            'data' => false,
         ]);
     }
 
