@@ -104,6 +104,8 @@ class TeacherController extends Controller
                 "message" => "Successfully get the teacher details"
             ]);
         }
+        return response()->json([
+        ]);
     }
 
     /**
