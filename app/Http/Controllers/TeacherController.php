@@ -97,7 +97,7 @@ class TeacherController extends Controller
     {
         //
         $teacher = User::find($id);
-        if (condition) {
+        if ($teacher) {
             # code...
         }
     }
