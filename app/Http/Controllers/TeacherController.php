@@ -96,6 +96,7 @@ class TeacherController extends Controller
     public function edit($id)
     {
         //
+        $teacher = User::find($id);
     }
 
     /**
